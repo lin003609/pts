@@ -4,8 +4,7 @@ public class Flight
 {
     private String id;
     private String planeType;//飞机类型
-    private String seatsNo;//座位号
-    private String totalSeatsNum;//总座位数
+    private String currentSeatNum;//总座位数
     private String departureAirPort;//出发机场
     private String destinationAirPort;//目的机场
     private String departureData;//出发时间
@@ -16,11 +15,13 @@ public class Flight
     public String getPlaneType() { return planeType; }
     public void setPlaneType(String planeType) { this.planeType = planeType; }
 
-    public String getSeatsNo() { return seatsNo; }
-    public void setSeatsNo(String seatsNo) { this.seatsNo = seatsNo; }
+    public String getCurrentSeatNum() {
+        return currentSeatNum;
+    }
 
-    public String getTotalSeatsNum() { return totalSeatsNum; }
-    public void setTotalSeatsNum(String totalSeatsNum) { this.totalSeatsNum = totalSeatsNum; }
+    public void setCurrentSeatNum(String currentSeatNum) {
+        this.currentSeatNum = currentSeatNum;
+    }
 
     public String getDepartureAirPort() { return departureAirPort; }
     public void setDepartureAirPort(String departureAirPort) { this.departureAirPort = departureAirPort; }
